@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--Light-gray);
+    /* max-width: 1440px; */
+    margin: auto;
+}
+
+.wrapper{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--White);
+}
+
+.card img{
+    width: 100%;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card .deskripsi{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.deskripsi h1{
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.deskripsi p{
+    font-size: 15px;
+    color: var(--Grayish-blue);
+    font-weight: 400;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 4px;
+}
+
+.attribution a{
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    .wrapper{
+        margin: 20px;
+    }
+    
+    .deskripsi h1{
+        font-size: 20px;
+    }
+
+    .deskripsi p{
+        font-size: 15px;
+    }
+
+    .attribution{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+}
